@@ -1,0 +1,44 @@
+﻿<Window x:Class="shop.Windows.Admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:shop.Windows"
+        mc:Ignorable="d"
+        Title="Admin" Height="600" Width="600" Background="#FFA5AFD0">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="331*"/>
+            <RowDefinition Height="33*"/>
+        </Grid.RowDefinitions>
+        <Label HorizontalAlignment="Center" Width="118" FontSize="22">
+            Товары
+        </Label>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Right" Margin="0,10,19,0" Width="174" Height="61" VerticalAlignment="Top" FontSize="16">
+            Фамилия Имя Отчество
+        </TextBlock>
+        <Image Margin="9,21,442,16"/>
+        <Image Margin="22,0,451,20" Source="/logo.png" Stretch="Fill"/>
+        <Button x:Name="Button1" Margin="0,28,400,24" Grid.Row="1" FontSize="16" Click="Button_Click">
+            Добавить
+        </Button>
+
+        <Button x:Name="Button2" Margin="195,28,199,24" Grid.Row="1" FontSize="16" Click="Button_Click_1">
+            Редактировать
+        </Button>
+
+        <Button x:Name="Button3" Margin="397,28,0,24" Grid.Row="1" FontSize="16" Click="Button3_Click">
+            Удалить
+        </Button>
+        <Button x:Name="Button_4" Grid.Row="2" Margin="488,331,0,0" Grid.RowSpan="2" FontSize="16" Click="Button_Click_2">
+         Выйти   
+        </Button>
+        <DataGrid Grid.Row="2">
+            
+        </DataGrid>
+
+
+    </Grid>
+</Window>
